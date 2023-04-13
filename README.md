@@ -30,15 +30,17 @@ Hello World!
 
 You can also run the server in a Docker container. To do that, you can run the following command:
 
-```bash
+```dockerfile
 docker build -t actix-hello-world .
 ```
 
 Once the image is built, you can run the container by running the following command:
 
-```bash
+```dockerfile
 docker run -p 8080:8080 actix-hello-world
 ```
+
+This project does not use Alpine, so the image is quite large. If you want to use Alpine, go ahead. I just wanted to keep it simple.
 
 [actix]: https://actix.rs/
 [actix-web]: https://actix.rs/docs/getting-started/
